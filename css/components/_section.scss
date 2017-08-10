@@ -1,0 +1,29 @@
+#fullpage__container{
+  .section{
+    .bg{
+      position: absolute;
+      top: 0;
+      left:0;
+      right:0;
+      bottom:0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
+    .content{
+      position: relative;
+      z-index: 2;
+      color: #fff ;
+      text-align: center;
+      width: 600px;
+      margin: 0 auto;
+      h2{
+
+      }
+      .desc{
+
+      }
+    }
+  }
+}

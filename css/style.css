@@ -1,0 +1,103 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+#fullpage__container .section .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1; }
+#fullpage__container .section .content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  width: 600px;
+  margin: 0 auto; }
+
+.global-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2; }
+  .global-nav h3 {
+    align-self: center;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle; }
+  .global-nav .menu {
+    display: inline-block; }
+    .global-nav .menu li {
+      display: inline-block; }
+      .global-nav .menu li a {
+        display: block;
+        padding: 15px; }
+
+.nav-arrows {
+  position: fixed;
+  z-index: 2;
+  bottom: 50px;
+  left: 40px; }
+  .nav-arrows .btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 12px 25px;
+    background: #fff;
+    color: #000;
+    border-radius: 3px; }
+
+#fp-nav.right {
+  right: 30px; }
+#fp-nav ul li a span {
+  background: #fff; }
+
+/*# sourceMappingURL=style.css.map */

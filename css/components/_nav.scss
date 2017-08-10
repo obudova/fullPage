@@ -1,0 +1,57 @@
+.global-nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  
+
+  h3{
+    align-self: center;
+    height:100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .menu{
+    display: inline-block;
+    li{
+      display: inline-block;
+      a{
+        display: block;
+        padding: 15px;
+      }
+    }
+  }
+}
+
+.nav-arrows{
+  position: fixed;
+  z-index: 2;
+  bottom: 50px;
+  left: 40px;
+  .btn{
+    display: inline-block;
+    cursor: pointer;
+    padding: 12px 25px;
+    background: #fff;
+    color: #000;
+    border-radius: 3px;
+  }
+}
+#fp-nav{
+  &.right{
+    right: 30px;
+  }
+  ul{
+    li{
+      a span{
+        background: #fff;
+      }
+
+    }
+  }
+}
