@@ -57,7 +57,27 @@ table {
   color: #fff;
   text-align: center;
   width: 600px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-100px);
+  transition: all .3s ease; }
+  #fullpage__container .section .content.active {
+    transform: none;
+    opacity: 1;
+    visibility: visible; }
+  #fullpage__container .section .content h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 0 20px; }
+  #fullpage__container .section .content .desc {
+    font-size: 24px; }
+#fullpage__container .slide {
+  text-align: center; }
+#fullpage__container .fp-controlArrow.fp-next {
+  right: 60px; }
+#fullpage__container .fp-controlArrow.fp-prev {
+  left: 60px; }
 
 .global-nav {
   position: fixed;
@@ -68,7 +88,17 @@ table {
   padding: 0 30px;
   display: flex;
   justify-content: space-between;
-  z-index: 2; }
+  z-index: 2;
+  transform: translateY(-100%);
+  transition: all .3s ease-out; }
+  .global-nav.active {
+    transform: none; }
+  .global-nav.black {
+    background: #000; }
+    .global-nav.black h3 {
+      color: #fff; }
+    .global-nav.black .menu li a {
+      color: #fff; }
   .global-nav h3 {
     align-self: center;
     height: 100%;
@@ -80,7 +110,9 @@ table {
       display: inline-block; }
       .global-nav .menu li a {
         display: block;
-        padding: 15px; }
+        padding: 15px;
+        text-decoration: none;
+        color: #000; }
 
 .nav-arrows {
   position: fixed;
@@ -96,7 +128,7 @@ table {
     border-radius: 3px; }
 
 #fp-nav.right {
-  right: 30px; }
+  right: 35px; }
 #fp-nav ul li a span {
   background: #fff; }
 

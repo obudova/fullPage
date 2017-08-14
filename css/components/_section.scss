@@ -18,12 +18,34 @@
       text-align: center;
       width: 600px;
       margin: 0 auto;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-100px);
+      transition: all .3s ease;
+      &.active{
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+      }
       h2{
-
+        font-size: 36px;
+        font-weight: 600;
+        margin: 0 0 20px;
       }
       .desc{
-
+        font-size: 24px;
       }
     }
+  }
+  .slide{
+    text-align: center;
+  }
+
+  .fp-controlArrow.fp-next{
+    right: 60px;
+  }
+
+  .fp-controlArrow.fp-prev{
+    left: 60px;
   }
 }
